@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище pizzaModelContainer" CdmEntityContainer="pizzaContext">
+    <EntitySetMapping Name="cards">
+      <EntityTypeMapping TypeName="pizzaModel.cards">
+        <MappingFragment StoreEntitySet="cards">
+          <ScalarProperty Name="rank" ColumnName="rank" />
+          <ScalarProperty Name="bonus" ColumnName="bonus" />
+          <ScalarProperty Name="lastAction" ColumnName="lastAction" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pizza">
+      <EntityTypeMapping TypeName="pizzaModel.pizza">
+        <MappingFragment StoreEntitySet="pizza">
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="dough" ColumnName="dough" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
