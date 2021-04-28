@@ -95,6 +95,7 @@ namespace pizza
                 $"Начислено бонусов: {inbonus.ToString()} \n" +
                 $"Всего бонусов: {bonus.ToString()}");
             db.SaveChanges();
+            Form1.cartLine.Clear();
         }
     }
 }

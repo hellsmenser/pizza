@@ -39,8 +39,11 @@ namespace pizza
             DialogResult result = cart.ShowDialog();
             if (result == DialogResult.Cancel)
                 return;
+
             Order order = new Order();
-            order.Show();
+            result = order.ShowDialog();
+            if (result == DialogResult.OK)
+                return;
         }
     }
 }
